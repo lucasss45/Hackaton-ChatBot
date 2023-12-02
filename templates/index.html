@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="../static/css/index.css">
 </head>
 <body>
-   <header class="cabecalho container">
+    <header class="cabecalho container">
         <img src="../static/img/logo-chatbot.svg" alt="Logo Chatbot">
         <div class="cabecalho__acoes">
             <a href="#" onclick="limparConversa()">Limpar Conversa</a>
         </div>
-   </header> 
-   <main class="main">
+    </header> 
+    <main class="main">
         <section class="chat container" id="chat">
             <p class="chat__bolha chat__bolha--bot">
                 Olá! Eu sou o assistente virtual do Time 001
@@ -24,13 +24,16 @@
         <section class="entrada container">
             <div class="entrada__container">
                 <input type="text" class="entrada__input" placeholder="Enviar uma mensagem" id="input">
-                <button aria-label="Botão de enviar" id="botao-enviar">
-                    <i class="icone icone--enviar-mensagem"></i>
-                </button>
+                <button aria-label="Botão de enviar" id="botao-enviar" onclick="enviarMensagemUsuario()">Enviar</button>
+                <button class="botao-pergunta" onclick="enviarPerguntaAutomatica('Qual é a sua pergunta?')">Pergunta Automática</button>
             </div>
         </section>
-   </main>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../static/js/index.js"></script>
+    <script src="../static/js/chatbot.js"></script>
+    <script>
+        // Adicione JavaScript 
+    </script>
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="../static/js/index.js"></script>
 </html>
